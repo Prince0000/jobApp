@@ -1,50 +1,115 @@
-# Welcome to your Expo app 👋
+# Job Listing App
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+A React Native application for browsing and managing job listings. Users can bookmark jobs and view detailed information on each job. The app supports offline viewing of bookmarks and updates in real-time.
 
-## Get started
+## Features
 
-1. Install dependencies
+- Browse job listings with infinite scrolling.
+- Bookmark jobs for later reference.
+- View detailed information of each job in a full-screen modal.
+- Dark mode design.
+- Real-time updates with automatic polling.
 
-   ```bash
-   npm install
-   ```
+## Prerequisites
 
-2. Start the app
+- Node.js (>= 14.x)
+- Expo CLI (>= 5.x)
+- React Native development environment
 
-   ```bash
-    npx expo start
-   ```
+## Installation
 
-In the output, you'll find options to open the app in a
-
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
-
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
+### Clone the Repository
 
 ```bash
-npm run reset-project
+git clone https://github.com/Prince0000/jobApp.git
+cd job-listing-app
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+### Install Dependencies
 
-## Learn more
+```bash
+npm install
+```
 
-To learn more about developing your project with Expo, look at the following resources:
+or
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+```bash
+yarn install
+```
 
-## Join the community
+### Install Expo CLI
 
-Join our community of developers creating universal apps.
+If you don’t have Expo CLI installed, install it globally using:
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+```bash
+npm install -g expo-cli
+```
+
+or
+
+```bash
+yarn global add expo-cli
+```
+
+## Setup
+
+### Configure Database (For Offline Bookmarking)
+
+This app uses `localStorage` for storing bookmarks. No additional configuration is needed for the database.
+
+### Running the App
+
+To start the development server and run the app, use:
+
+```bash
+expo start
+```
+
+This command will open a browser window where you can run the app on an emulator or a physical device using the Expo Go app.
+
+## Usage
+
+1. **Browse Jobs**: Navigate through the list of jobs with infinite scrolling.
+2. **Bookmark Jobs**: Click the bookmark icon on a job to add it to your bookmarks.
+3. **View Job Details**: Tap on a job card to view detailed information in a full-screen modal.
+4. **Manage Bookmarks**: Access the Bookmarks tab to see all your bookmarked jobs.
+
+## Screenshots
+
+![Home Screen](https://drive.google.com/file/d/1nz33CRx_zNT2412KcMD4daLwfUN3BiWc/view?usp=sharing)
+![Job Details](https://drive.google.com/file/d/1o5s9FfIvWSbtU7fBg7w_niFBMCGtff1V/view?usp=sharing)
+![Bookmarks](https://drive.google.com/file/d/1o2apU6RqCHFUqrEtmlNeaVizQeWg2YuW/view?usp=sharing)
+
+## Code Structure
+
+- `app/`: Contains the main application code.
+  - `tabs/`: Contains tab-based screens.
+    - `HomeScreen.tsx`: The screen that displays job listings.
+    - `BookmarkScreen.tsx`: The screen that displays bookmarked jobs.
+  - `components/`: Contains reusable UI components.
+    - `ThemedText.tsx`: Custom text component for consistent styling.
+  - `helpers/`: Contains utility functions.
+    - `BookmarkHelper.ts`: Functions for managing bookmarks.
+
+## Troubleshooting
+
+- **`expo-sqlite` not found**: Ensure you have installed `expo-sqlite` using `expo install expo-sqlite`. For localStorage, make sure you are using `AsyncStorage` from `@react-native-async-storage/async-storage`.
+
+- **Key errors in FlatList**: Ensure each item in your FlatList has a unique key by using `item.id.toString()` in the `keyExtractor`.
+
+## Contributing
+
+1. Fork the repository.
+2. Create a new branch: `git checkout -b feature/YourFeature`.
+3. Commit your changes: `git commit -am 'Add new feature'`.
+4. Push to the branch: `git push origin feature/YourFeature`.
+5. Create a new Pull Request.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Acknowledgements
+
+- [React Native](https://reactnative.dev/) - Framework used for building the mobile app.
+- [Expo](https://expo.dev/) - Development framework for React Native.
