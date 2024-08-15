@@ -76,9 +76,13 @@ This command will open a browser window where you can run the app on an emulator
 
 ## Screenshots
 
-![Home Screen](https://drive.google.com/file/d/1nz33CRx_zNT2412KcMD4daLwfUN3BiWc/view?usp=sharing)
-![Job Details](https://drive.google.com/file/d/1o5s9FfIvWSbtU7fBg7w_niFBMCGtff1V/view?usp=sharing)
-![Bookmarks](https://drive.google.com/file/d/1o2apU6RqCHFUqrEtmlNeaVizQeWg2YuW/view?usp=sharing)
+
+![Jobs](https://github.com/user-attachments/assets/ba4b79ab-3d8e-4a22-89a8-103d49686584)
+
+![Job_Details](https://github.com/user-attachments/assets/20d8839d-7699-43d4-a1b0-642d08c3486b)
+
+![Bookmarks](https://github.com/user-attachments/assets/e45f8a41-fc90-4a11-9043-1c4586ed24df)
+
 
 ## Code Structure
 
@@ -105,9 +109,6 @@ This command will open a browser window where you can run the app on an emulator
 4. Push to the branch: `git push origin feature/YourFeature`.
 5. Create a new Pull Request.
 
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## Acknowledgements
 
