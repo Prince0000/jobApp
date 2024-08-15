@@ -62,6 +62,10 @@ This app uses `localStorage` for storing bookmarks. No additional configuration 
 To start the development server and run the app, use:
 
 ```bash
+npx expo start
+```
+
+```bash
 expo start
 ```
 
