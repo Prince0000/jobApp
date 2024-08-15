@@ -76,13 +76,11 @@ This command will open a browser window where you can run the app on an emulator
 
 ## Screenshots
 
+<img src="https://github.com/user-attachments/assets/ba4b79ab-3d8e-4a22-89a8-103d49686584" alt="Jobs" width="300"/>
 
-![Jobs](https://github.com/user-attachments/assets/ba4b79ab-3d8e-4a22-89a8-103d49686584)
+<img src="https://github.com/user-attachments/assets/20d8839d-7699-43d4-a1b0-642d08c3486b" alt="Job Details" width="300"/>
 
-![Job_Details](https://github.com/user-attachments/assets/20d8839d-7699-43d4-a1b0-642d08c3486b)
-
-![Bookmarks](https://github.com/user-attachments/assets/e45f8a41-fc90-4a11-9043-1c4586ed24df)
-
+<img src="https://github.com/user-attachments/assets/e45f8a41-fc90-4a11-9043-1c4586ed24df" alt="Bookmarks" width="300"/>
 
 ## Code Structure
 
